@@ -49,8 +49,6 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173 — Vite proxies `/api` and `/ws` to the backend.
-
 ## Real implementation status (phased)
 
 ### Phase 1 — Real Edge CV: Driver Fatigue (PERCLOS) ✅
@@ -378,4 +376,3 @@ genuinely off.
 - `GET /api/dispatch/{pothole_id}/invoice` — download the PDF repair invoice for a dispatched pothole
 - `GET /api/status` — current fatigue state + active talk-back challenge + pipeline health
 - `WS /ws` — live telemetry stream. Message types: `fatigue` (with `source`/`face`/`nod`), `talkback`, `talkback_done`, `crash`, `ambulance` (with `detection_source: "audio-siren"`), `pothole`. Inbound: `fatigue`, `talkback_answer`, `crash_candidate`, `ambulance_candidate`, `ambulance_clear`
->>>>>>> 87bec44 (Initial Commit)
