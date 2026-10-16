@@ -1,0 +1,16 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+redis>=5.0
+asyncpg>=0.29
+opencv-python-headless>=4.9
+pillow>=10.0
+numpy>=1.26
+
+# Optional: real YOLO pothole detection + MiDaS monocular depth.
+# Enables the 'yolo' detector tier and 'midas' depth tier in the vision
+# pipeline (see README Phase 3 for fine-tuning steps and the models/ dir).
+ml = [
+    torch; platform_system != "Darwin",
+    torchvision; platform_system != "Darwin",
+    ultralytics>=8.2,
+]
