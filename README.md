@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# SentinelDrive
-=======
 # SentinelDrive
 
 Next-Gen AI & Telematics Ecosystem for Proactive Road Safety, Active Collision Mitigation & Municipal Dispatch.
